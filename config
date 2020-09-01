@@ -156,7 +156,6 @@ assign [class="Atril"] $ws10
 
 # Enable floating.
 floating_minimum_size 500 x 350
-floating_maximum_size 700 x 550
 for_window [class="Arandr"] floating enable
 for_window [class="Blueman-manager"] floating enable
 
@@ -274,6 +273,7 @@ bindsym $mod+x exec i3lock -i /home/ogy/Wallpapers/mSd9gbH.png
 exec_always --no-startup-id feh --bg-scale /home/ogy/Wallpapers/wallpaper.jpg
 
 # Autostart.
+exec --no-startup-id ssh-add ~/.ssh/ogy
 
 # Picom/Compton setup.
 exec_always --no-startup-id killall picom; picom --config ~/.config/i3/picom.conf
